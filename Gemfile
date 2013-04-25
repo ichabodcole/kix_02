@@ -8,12 +8,12 @@ gem 'devise', '~> 2.2.3'
 
 gem 'sqlite3'
 
-
 group :development, :test do
-  gem 'rspec-rails', ''
+  gem 'rspec-rails', '~> 2.13.0'
   gem 'guard', '~> 1.8.0'
   gem 'guard-livereload', '~> 1.4.0'
   gem 'guard-rspec', '~> 2.5.4'
+  gem 'growl', '~> 1.0.3'
 end
 
 # Gems used only for assets and not required
