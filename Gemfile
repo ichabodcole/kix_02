@@ -7,7 +7,9 @@ gem 'unicorn', '~> 4.6.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.13.0'
@@ -15,6 +17,7 @@ group :development, :test do
   gem 'guard-livereload', '~> 1.4.0'
   gem 'guard-rspec', '~> 2.5.4'
   gem 'growl', '~> 1.0.3'
+  gem 'sqlite3'
 end
 
 # Gems used only for assets and not required
